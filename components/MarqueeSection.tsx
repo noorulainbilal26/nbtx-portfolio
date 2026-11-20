@@ -50,6 +50,9 @@ const stackItems = [
 const shot = (url: string) =>
   `https://app.snap-render.com/v1/embed?url=${encodeURIComponent(url)}&format=png`;
 
+const fallbackShot = (url: string) =>
+  `https://s.wordpress.com/mshots/v1/${encodeURIComponent(url)}?w=1200`;
+
 const projects = [
        {
         id: 21,
